@@ -4,7 +4,7 @@ const auth = firebase.auth();
 
 function SignOut() {
   return (
-    <button className="sign-out" onClick={() => auth.signOut()}>
+    <button style={{ marginRight: '40px' }} className="waves-effect waves-light btn-small" onClick={() => auth.signOut()}>
       Sign Out
     </button>
   );

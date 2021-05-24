@@ -1,6 +1,7 @@
 import firebase from "../firebase";
 import moment from "moment";
 import { FaUserCircle } from "react-icons/fa";
+import "./Messages.css";
 
 const auth = firebase.auth();
 
@@ -18,8 +19,10 @@ function Message(props) {
           <FaUserCircle />
         </div>
       )}
-      <p>{text}</p>
-      <p>{createdAt && moment(createdAt.toDate()).calendar()}</p>
+      <div className={`messaged_${messageClass}`}>
+        <p>{text}</p>
+        <p className="timestamp">{createdAt && moment(createdAt.toDate()).calendar()}</p>
+      </div>
     </div>
   );
 }

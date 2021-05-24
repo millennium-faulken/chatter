@@ -9,10 +9,12 @@ const Nav = () => {
   const [user] = useAuthState(auth);
   const buttonDisplay = user ? <SignOut /> : <SignIn />;
   return (
-    <div className="container">
-      <h1>Chatter</h1>
-      {buttonDisplay}
-    </div>
+    <nav className="nav-wrapper grey darken-3">
+      <a style={{ marginLeft: "40px" }} href="/" className="h1">
+        Chatter
+      </a>
+      <ul className="right">{buttonDisplay}</ul>
+    </nav>
   );
 };
 
