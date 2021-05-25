@@ -21,7 +21,9 @@ function Message(props) {
       )}
       <div className={`messaged_${messageClass}`}>
         <p>{text}</p>
-        <p className="timestamp">{createdAt && moment(createdAt.toDate()).calendar()}</p>
+        <p className="timestamp">
+          {createdAt && moment(createdAt.toDate()).calendar()}
+        </p>
       </div>
     </div>
   );

@@ -2,6 +2,7 @@ import firebase from "./firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 import Messenger from "./messenger/Messenger";
 import Nav from "./navBar/Nav";
+import './index.css'
 
 const auth = firebase.auth();
 
