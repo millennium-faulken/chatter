@@ -12,9 +12,8 @@ function SignIn() {
   return (
     <button onClick={signInWithGoogle} className="googleButton">
       <div className="google">
-        {" "}
         <FcGoogle />
-      </div>{" "}
+      </div>
       <p>Sign in with Google</p>
     </button>
   );
