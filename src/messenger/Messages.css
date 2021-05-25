@@ -121,6 +121,7 @@ img {
   background-color: #4081EC;
   color: white;
   border: none;
+  border-radius: 3px;
 }
 
 .googleButton p {
