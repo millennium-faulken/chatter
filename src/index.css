@@ -13,11 +13,10 @@ code {
 }
 
 html, body {
-  height: 100%;
   overflow-y: hidden;
 }
 
 .App {
-  max-height: 100vh !important;
-
+background-color: #4B494C;
+height: 100vh;
 }

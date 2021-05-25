@@ -9,7 +9,7 @@ function SignIn() {
   };
 
   return (
-    <button style={{ marginRight: '40px' }} className="waves-effect waves-light btn" onClick={signInWithGoogle}>
+    <button onClick={signInWithGoogle}>
       Sign in with Google
     </button>
   );
