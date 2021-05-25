@@ -1,4 +1,5 @@
 import firebase from "../firebase";
+import { FcGoogle } from "react-icons/fc";
 
 const auth = firebase.auth();
 
@@ -9,8 +10,12 @@ function SignIn() {
   };
 
   return (
-    <button onClick={signInWithGoogle}>
-      Sign in with Google
+    <button onClick={signInWithGoogle} className="googleButton">
+      <div className="google">
+        {" "}
+        <FcGoogle />
+      </div>{" "}
+      <p>Sign in with Google</p>
     </button>
   );
 }

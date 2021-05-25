@@ -62,6 +62,10 @@ function Messenger() {
           <IoSend />
         </button>
       </form>
+      <h1>Rules:</h1>
+      <li>Be Nice</li>
+      <li>No bad words</li>
+      <li>Enjoy!</li>
     </div>
   );
 }

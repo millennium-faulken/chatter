@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      {user ? <Messenger /> : null}
+      {user ? <Messenger /> : <h1 className="notSignedIn">Please sign in to get started!</h1>}
     </div>
   );
 }
